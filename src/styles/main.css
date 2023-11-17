@@ -1,0 +1,130 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('../images/wall.png');
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-bottom: 5px solid #ffd700;
+}
+
+.menu-time h2:nth-child(1),
+.menu-score h2:nth-child(1) {
+    color: #FF0000
+}
+
+.menu-time h2:nth-child(2),
+.menu-score h2:nth-child(2) {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.menu-lives {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.menu-lives img {
+    height: 60px;
+}
+
+.panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: (3, 1fr);
+    margin: 1rem;
+}
+
+.square {
+    height: 150px;
+    border: 1px solid #000000;
+    width: 150px;
+    background-color: #3bd2a0
+}
+
+.enemy {
+    background-image: url('../images/ralph.png');
+    background-position: center;
+    background-size: cover;
+    cursor: url('../images/hammer-icon.svg');
+}
+
+.reset-game-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-message-area {
+    height: 300px;
+    width: 300px;
+    background-color: #FFF;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.modal-message-area h1 {
+    font-size: 1.4rem;
+}
+
+.modal-message-area h2{
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+.modal-message-area button {
+    font-size: 1.2rem;
+    margin-top: 12px;
+    background-color: transparent;
+    height: 40px;
+    border: 2px solid #000;
+    border-radius: 6px;
+    width: 200px;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        width: 100%;
+        font-size: 0.8rem;
+        padding-top: 12px;
+    }
+    .square {
+        height: 130px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 300px) {
+    .square {
+        height: 100px;
+        width: 70px;
+    }
+}
