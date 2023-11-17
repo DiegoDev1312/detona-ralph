@@ -31,6 +31,7 @@ function createModalInfo(codition) {
 }
 
 function openCoditionModal(codition) {
+    navigator.vibrate(1000);
     playSound('finish-sound.mp3', 1);
     clearTimeout(state.actions.enemyTime);
     clearTimeout(state.actions.playerTime);
