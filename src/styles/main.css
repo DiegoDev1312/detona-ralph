@@ -43,6 +43,7 @@
     justify-content: center;
     grid-template-columns: (3, 1fr);
     margin: 1rem;
+    cursor: url('../images/hammer.svg'), default;
 }
 
 .square {
@@ -56,7 +57,6 @@
     background-image: url('../images/ralph.png');
     background-position: center;
     background-size: cover;
-    cursor: url('../images/hammer-icon.svg');
 }
 
 .reset-game-modal {
